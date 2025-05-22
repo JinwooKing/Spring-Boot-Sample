@@ -1,0 +1,10 @@
+# Spring Boot
+*.log
+*.jar
+*.war
+*.iml
+/.idea/
+/target/
+/out/
+application.yml
+.env

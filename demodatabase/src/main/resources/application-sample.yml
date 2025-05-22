@@ -1,0 +1,30 @@
+spring:
+  datasource:
+    oracle:
+      url: jdbc:oracle:thin:@localhost:1521:xe
+      username: 
+      password: 
+      driver-class-name: oracle.jdbc.OracleDriver
+    postgre:
+      url: jdbc:postgresql://localhost:5432/mydb
+      username: 
+      password: 
+      driver-class-name: org.postgresql.Driver
+    sqlserver:
+      url: jdbc:sqlserver://localhost:1433;databaseName=aspnet-WebApp1-53bc9b9d-9d6a-45d4-8429-2a2761773502;encrypt=true;trustServerCertificate=true
+      username: 
+      password: 
+      driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+  jpa:
+    hibernate:
+      ddl-auto: update  # 필요에 따라 update, validate 등으로 설정
+    show-sql: true     # SQL 로그 출력 여부
+    open-in-view: false  # Lazy Loading을 위한 설정 (필요시 true로 변경)
+
+server:
+    port: 8081
+
+  # 필요시 설정 (예: 커넥션 풀)
+  # hikari:
+  #   maximum-pool-size: 10
+
